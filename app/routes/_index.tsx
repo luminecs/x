@@ -6,8 +6,28 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
+    <div>
       <h1>Welcome to Remix</h1>
+      <h2>
+        <a id="Welcome" href="#">
+          Welcome to Remix
+        </a>
+      </h2>
+      <p>
+        Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
+        World! Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello
+        World! Hello World! Hello World! World! Hello World! Hello World! Hello World! Hello World! Hello World! World!
+        Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello World!
+        Hello World! Hello World! World! Hello World! Hello World! Hello World! Hello World! Hello World!
+      </p>
+      <p>
+        Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
+        World! Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello
+        World! Hello World! Hello World! World! Hello World! Hello World! Hello World! Hello World! Hello World! World!
+        Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello World!
+        Hello World! Hello World! World! Hello World! Hello World! Hello World! Hello World! Hello World!
+      </p>
+      <pre>{`${'var a = 1; ' + "const b = 'hallo'"}`}</pre>
     </div>
   );
 }
