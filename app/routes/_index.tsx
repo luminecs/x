@@ -1,5 +1,7 @@
 import type { MetaFunction } from '@remix-run/cloudflare';
-import { Demo } from '~/routes/demo';
+import Questions from '~/routes/questions/questions'
+import Answers from '~/routes/answers/answers'
+import { Link } from '@remix-run/react'
 
 export const meta: MetaFunction = () => {
   return [{ title: 'X' }, { name: 'description', content: 'Welcome to X!' }];
@@ -8,11 +10,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <ul>
-        <li>你好</li>
-        <li>你好</li>
-        <li>你好</li>
-      </ul>
+      <Questions />
+      <li>
+        <Link to="/answers/answers">Answers</Link>
+      </li>
     </div>
   );
 }

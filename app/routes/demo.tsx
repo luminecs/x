@@ -1,4 +1,4 @@
-export const Demo = () => {
+export default function Demo() {
   return (
     <div>
       <h2>
