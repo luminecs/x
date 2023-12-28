@@ -72,3 +72,31 @@ a {
   padding: 0 10px;
   font-weight: bold;
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 40em;
+  background-color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-link {
+  font-weight: bold;
+}
+.reader {
+  margin-right: 10px;
+}
+
+/* 隐藏整个网页的滚动条 chrome safari */
+body::-webkit-scrollbar {
+  display: none;
+}
+/* 隐藏整个网页的滚动条 firefox */
+html {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+

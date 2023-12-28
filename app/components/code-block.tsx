@@ -3,10 +3,10 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
-const CodeBlock = ({ code, lang = 'text', style = oneDark, hideCopyButton = false }: {
+const CodeBlock = ({ code, lang = 'text', theme = oneDark, hideCopyButton = false }: {
   code: string,
   lang?: string,
-  style?: { [key: string]: React.CSSProperties },
+  theme?: { [key: string]: React.CSSProperties },
   hideCopyButton?: boolean
 }) => {
   const [isCopied, setIsCopied] = useState(false)
@@ -18,7 +18,7 @@ const CodeBlock = ({ code, lang = 'text', style = oneDark, hideCopyButton = fals
 
   return (
     <>
-      <SyntaxHighlighter language={lang} style={style} showLineNumbers={false}>
+      <SyntaxHighlighter language={lang} style={theme} showLineNumbers={false}>
         {code}
       </SyntaxHighlighter>
       {!hideCopyButton &&
