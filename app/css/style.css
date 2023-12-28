@@ -46,3 +46,29 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.divide-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divide-line::before,
+.divide-line::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.divide-line::before {
+  margin-right: .5em;
+}
+
+.divide-line::after {
+  margin-left: .5em;
+}
+
+.divide-line-text {
+  padding: 0 10px;
+  font-weight: bold;
+}
