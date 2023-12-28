@@ -23,7 +23,16 @@ const CodeBlock = ({ code, lang = 'text', style = oneDark, hideCopyButton = fals
       </SyntaxHighlighter>
       {!hideCopyButton &&
         <CopyToClipboard text={code} onCopy={handleCopy}>
-          <button>{isCopied ? 'Copied!' : 'Copy'}</button>
+          <button style={{
+            backgroundColor: 'dodgerblue',
+            borderRadius: '0.25rem',
+            borderColor: 'dodgerblue',
+            border: 'none',
+            color: 'white',
+            padding: '0.5rem',
+            cursor: 'pointer',
+            fontSize: '0.9rem',
+          }}>{isCopied ? 'Copied!' : 'Copy the above code'}</button>
         </CopyToClipboard>
       }
     </>
