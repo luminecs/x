@@ -1,12 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 
-declare global {
-  interface Window {
-    readAloud: (audioElement: HTMLAudioElement, playerElement: HTMLElement) => void;
-    readAloudInit: (audioElement: HTMLAudioElement, playerElement: HTMLElement) => void;
-  }
-}
-
 const ReadAloudButton = () => {
   const playerRef = useRef(null);
   const audioRef = useRef(null);
