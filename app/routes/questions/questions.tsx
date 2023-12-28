@@ -7,6 +7,7 @@ export default function Questions () {
       <QuestionLine to="/demo" content="Demo"/>
       <DivideLine text="JavaScript"/>
       <DivideLine text="TypeScript"/>
+      <QuestionLine to="/why-we-use-typescript" content="Why we use TypeScript?"/>
       <DivideLine text="English"/>
     </>
   )
