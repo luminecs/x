@@ -1,4 +1,6 @@
-export default function Demo() {
+import CodeBlock from '~/components/gist'
+
+export default function Demo () {
   return (
     <div>
       <h2>
@@ -18,6 +20,8 @@ export default function Demo() {
           Welcome to Remix2
         </a>
       </h2>
+      <CodeBlock code={'let a = 1;'} lang={'javascript'}/>
+      <CodeBlock code={`${'var a = 1;\nconst b = \'hallo\''}`} lang={'javascript'}/>
       <p>
         Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello
         World! Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello
@@ -25,7 +29,7 @@ export default function Demo() {
         Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello World!
         Hello World! Hello World! World! Hello World! Hello World! Hello World! Hello World! Hello World!
       </p>
-      <pre>{`${'var a = 1; ' + "const b = 'hallo'"}`}</pre>
+      <pre>{`${'var a = 1; ' + 'const b = \'hallo\''}`}</pre>
       <h2>
         <a id="Welcome" href="#3">
           Welcome to Remix3
@@ -38,7 +42,7 @@ export default function Demo() {
         Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello World!
         Hello World! Hello World! World! Hello World! Hello World! Hello World! Hello World! Hello World!
       </p>
-      <pre>{`${'var a = 1; ' + "const b = 'hallo'"}`}</pre>
+      <pre>{`${'var a = 1; ' + 'const b = \'hallo\''}`}</pre>
       <h2>
         <a id="Welcome" href="#4">
           Welcome to Remix4
@@ -51,7 +55,7 @@ export default function Demo() {
         Hello World! Hello World! Hello World! Hello World! Hello World! World! Hello World! Hello World! Hello World!
         Hello World! Hello World! World! Hello World! Hello World! Hello World! Hello World! Hello World!
       </p>
-      <pre>{`${'var a = 1; ' + "const b = 'hallo'"}`}</pre>
+      <pre>{`${'var a = 1; ' + 'const b = \'hallo\''}`}</pre>
     </div>
-  );
+  )
 };
