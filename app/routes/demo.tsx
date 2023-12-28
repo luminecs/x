@@ -1,4 +1,9 @@
-import CodeBlock from '~/components/gist'
+import CodeBlock from '~/components/code-block'
+import type { MetaFunction } from '@remix-run/cloudflare'
+
+export const meta: MetaFunction = () => {
+  return [{ title: 'My Remix Demo' }, { name: 'description', content: 'Welcome to My Remix Demo!' }];
+};
 
 const c = `export default function Demo () {
   return (
