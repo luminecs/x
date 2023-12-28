@@ -83,9 +83,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
 .home-link {
   font-weight: bold;
 }
+
 .reader {
   margin-right: 10px;
 }
@@ -94,9 +96,24 @@ a {
 body::-webkit-scrollbar {
   display: none;
 }
+
 /* 隐藏整个网页的滚动条 firefox */
 html {
   scrollbar-width: none;
   scrollbar-color: transparent transparent;
 }
 
+.ra-button {
+  padding: .3em .9em;
+  border-radius: .25em;
+  background: linear-gradient(#fff, #efefef);
+  box-shadow: 0 1px .2em gray;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ra-button svg {
+  height: 1em;
+  margin: 0 .5em 0 0;
+}
