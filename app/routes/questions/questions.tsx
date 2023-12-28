@@ -1,13 +1,9 @@
-import { Link } from '@remix-run/react'
+import QuestionLine from '~/components/question-line'
 
-export default function Questions() {
+export default function Questions () {
   return (
     <div>
-      <ul>
-        <li>
-          <Link to="/demo">Demo</Link>
-        </li>
-      </ul>
+      <QuestionLine to="/demo" content="Demo"/>
     </div>
-  );
+  )
 }
