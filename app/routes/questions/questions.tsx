@@ -8,7 +8,10 @@ export default function Questions () {
       <DivideLine text="JavaScript"/>
       <DivideLine text="TypeScript"/>
       <QuestionLine to="/why-we-use-typescript" content="Why we use TypeScript?"/>
+      <DivideLine text="Node.js"/>
+      <QuestionLine to="/what-is-nodejs" content="What is Node.js?"/>
       <DivideLine text="English"/>
+      <QuestionLine to="/english-sentences" content="English Sentences"/>
     </>
   )
 }
