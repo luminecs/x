@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { oneLight as prismTheme } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const CodeBlock = ({
   code,
   lang = 'text',
-  theme = oneDark,
+  theme = prismTheme,
   hideCopyButton = false,
 }: {
   code: string;
