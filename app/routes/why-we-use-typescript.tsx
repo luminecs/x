@@ -13,7 +13,6 @@ export default function WhyWeUseTypeScript() {
       <h2>Why we use TypeScript?</h2>
       <ReadAloudButton />
       <p>TypeScript is a static type check system for JavaScript.</p>
-      <p>六合之外，圣人存而不论；六合之内，圣人论而不议。</p>
     </>
   );
 }
