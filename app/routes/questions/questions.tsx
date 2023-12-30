@@ -23,6 +23,10 @@ export default function Questions() {
           'How to declare a variable of type Symbol?',
         ]}
       />
+      <QuestionLine
+        to="/what-is-an-object-type-in-javascript"
+        content="What is an Object Type in JavaScript? How to declare variable of types Object?"
+      />
       <DivideLine text="TypeScript" />
       <QuestionLine to="/why-we-use-typescript" content="Why we use TypeScript?" />
       <DivideLine text="Node.js" />
