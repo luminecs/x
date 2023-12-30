@@ -16,6 +16,10 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+const boolCode = `let a = true;
+const b = false;
+`;
+
 export default function WhatAreThePrimitiveDataTypesInJavaScript() {
   return (
     <>
@@ -33,7 +37,19 @@ export default function WhatAreThePrimitiveDataTypesInJavaScript() {
       </ul>
       <hr />
       <h3>How to declare a variable of type Boolean?</h3>
-      <CodeBlock code="let a = true;" lang="javascript" />
+      <CodeBlock code={boolCode} lang="javascript" />
+      <h3>How to declare a variable of type Null?</h3>
+      <CodeBlock code={boolCode} lang="javascript" />
+      <h3>How to declare a variable of type Undefined?</h3>
+      <CodeBlock code={boolCode} lang="javascript" />
+      <h3>How to declare a variable of type Number?</h3>
+      <CodeBlock code={boolCode} lang="javascript" />
+      <h3>How to declare a variable of type BigInt?</h3>
+      <CodeBlock code={boolCode} lang="javascript" />
+      <h3>How to declare a variable of type String?</h3>
+      <CodeBlock code={boolCode} lang="javascript" />
+      <h3>How to declare a variable of type Symbol?</h3>
+      <CodeBlock code={boolCode} lang="javascript" />
     </>
   );
 }
