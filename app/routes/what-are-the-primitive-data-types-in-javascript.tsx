@@ -54,7 +54,11 @@ const b = BigInt("1234567890123456789012345678901234567890");
         lang="javascript"
       />
       <h3>How to declare a variable of type String?</h3>
-      <CodeBlock code={`let a = 'Hello';\nconst b = "World";`} lang="javascript" />
+      <p>JavaScript has no extra type for characters. It uses strings to represent them.</p>
+      <CodeBlock
+        code={`let a = 'Hello';\nconst b = "World";\nlet c = \`${123}\` // string literal`}
+        lang="javascript"
+      />
       <h3>How to declare a variable of type Symbol?</h3>
       <CodeBlock code={`let a = Symbol("description");`} lang="javascript" />
     </>
