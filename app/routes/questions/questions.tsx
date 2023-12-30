@@ -6,7 +6,10 @@ export default function Questions() {
     <>
       <QuestionLine to="/demo" content="Demo" />
       <DivideLine text="JavaScript" />
-      <QuestionLine to="/how-to-write-comments-in-javascript" content="How to write comments in JavaScript?" />
+      <QuestionLine
+        to="/how-to-write-comments-in-javascript"
+        content="What is comments? How to write comments in JavaScript?"
+      />
       <DivideLine text="TypeScript" />
       <QuestionLine to="/why-we-use-typescript" content="Why we use TypeScript?" />
       <DivideLine text="Node.js" />

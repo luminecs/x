@@ -4,8 +4,8 @@ import CodeBlock from '~/components/code-block';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'How to write comments in JavaScript?' },
-    { name: 'description', content: 'How to write comments in JavaScript?' },
+    { title: 'What is comments? How to write comments in JavaScript?' },
+    { name: 'description', content: 'What is comments? How to write comments in JavaScript?' },
   ];
 };
 
@@ -26,7 +26,8 @@ export default function HowToWriteCommentsInJavaScript() {
   return (
     <>
       <Header />
-      <h2>How to write comments in JavaScript?</h2>
+      <h2>What is comments? How to write comments in JavaScript?</h2>
+      <p>Comments in code refer to text that will be ignored by the compiler or interpreter.</p>
       <CodeBlock code={code} lang="javascript" />
     </>
   );
