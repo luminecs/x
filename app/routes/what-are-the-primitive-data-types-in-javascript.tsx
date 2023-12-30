@@ -16,10 +16,6 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-const boolCode = `let a = true;
-const b = false;
-`;
-
 export default function WhatAreThePrimitiveDataTypesInJavaScript() {
   return (
     <>
@@ -37,19 +33,30 @@ export default function WhatAreThePrimitiveDataTypesInJavaScript() {
       </ul>
       <hr />
       <h3>How to declare a variable of type Boolean?</h3>
-      <CodeBlock code={boolCode} lang="javascript" />
+      <CodeBlock
+        code={`let a = true;
+const b = false;
+`}
+        lang="javascript"
+      />
       <h3>How to declare a variable of type Null?</h3>
-      <CodeBlock code={boolCode} lang="javascript" />
+      <CodeBlock code="let a = null;" lang="javascript" />
       <h3>How to declare a variable of type Undefined?</h3>
-      <CodeBlock code={boolCode} lang="javascript" />
+      <CodeBlock code="let a = undefined;" lang="javascript" />
       <h3>How to declare a variable of type Number?</h3>
-      <CodeBlock code={boolCode} lang="javascript" />
+      <p>The basic number type is used for both floating point numbers (doubles) and integers.</p>
+      <CodeBlock code={`let a = 1.234;\nconst b = -0.03;`} lang="javascript" />
       <h3>How to declare a variable of type BigInt?</h3>
-      <CodeBlock code={boolCode} lang="javascript" />
+      <CodeBlock
+        code={`let a = 1234567890123456789012345678901234567890n; // ends with 'n'
+const b = BigInt("1234567890123456789012345678901234567890");
+`}
+        lang="javascript"
+      />
       <h3>How to declare a variable of type String?</h3>
-      <CodeBlock code={boolCode} lang="javascript" />
+      <CodeBlock code={`let a = 'Hello';\nconst b = "World";`} lang="javascript" />
       <h3>How to declare a variable of type Symbol?</h3>
-      <CodeBlock code={boolCode} lang="javascript" />
+      <CodeBlock code={`let a = Symbol("description");`} lang="javascript" />
     </>
   );
 }
